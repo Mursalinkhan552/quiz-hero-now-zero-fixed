@@ -7,6 +7,8 @@
     <title>Blog Hero</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="./blog.js" defer></script>
+    <!-- FontAwesome Link -->
+    <script src="https://kit.fontawesome.com/333b202482.js" crossorigin="anonymous"></script>
 </head>
 
 <body class="bg-white font-common">
@@ -25,10 +27,54 @@
 
     </header>
 
-    <main>
-        <!-- map() vs filter() vs forEach() vs find() -->
+    <main class="my-6">
+        <div class="my-6 mx-5">
+            <!-- map() vs filter() vs forEach() vs find() -->
+            <h3 class="text-4xl">map() vs filter() vs forEach() vs find() Differences ??</h3>
+            <h4 class="ps-4 mt-3 text-2xl text-orange-600"><i class="fa-solid fa-hashtag"></i> The map() method :- </h4>
+            <p class="px-4">The map() method loops through each element in array and calls the provided function for
+                each element.
+                This method creates a new array and doesn't alter the original array.</p>
+
+            <h4 class="ps-4 mt-3 text-2xl text-orange-600"><i class="fa-solid fa-hashtag"></i> The filter() method :- </h4>
+            <p class="px-4">The filter() method in JavaScript creates a new array with the elements that satisfies the provided condition. This method calls a provided function for each element in array and verifies the condition given in the provided function and passes only those elements that satisfy the given condition.</p>
+
+            <h4 class="ps-4 mt-3 text-2xl text-orange-600"><i class="fa-solid fa-hashtag"></i> The forEach() method :- </h4>
+            <p class="px-4">forEach() is used to execute the same code on every element in an array but does not change the array and it returns undefined.</p>
+
+            <h4 class="ps-4 mt-3 text-2xl text-orange-600"><i class="fa-solid fa-hashtag"></i> The find() method :- </h4>
+            <p class="px-4">find() is returns only one match in an array. If in an array is more than one result, the function will return the first that has matched.</p>
+        </div>
+
         <!-- local storage vs session storage vs Cookies -->
+        <div  class="my-6 mx-5">
+            <h3 class="text-4xl">local storage vs session storage vs Cookies Differences???</h3>
+            <h4 class="ps-4 mt-3 text-2xl text-orange-600"><i class="fa-solid fa-hashtag"></i> Local Storage :- </h4>
+            <p class="px-4">Local storage is similar to cookies, but it stores data in a structured way, usually as key-value pairs. The data is stored on the client-side computer, and it remains there until it is manually cleared. Local storage is generally used for storing data that needs to persist even after the browser has been closed.</p>
+
+            <h4 class="ps-4 mt-3 text-2xl text-orange-600"><i class="fa-solid fa-hashtag"></i> Session Storage :- </h4>
+            <p class="px-4">Session storage is similar to local storage, but it stores data only for the current session and is deleted once the browser is closed. Session storage is used for storing temporary data that is only needed while the user is on the website.</p>
+
+            <h4 class="ps-4 mt-3 text-2xl text-orange-600"><i class="fa-solid fa-hashtag"></i> Cookies :- </h4>
+            <p class="px-4">Cookies are small pieces of data stored on the client-side computer, usually in plain text. A cookie is typically sent to the server with each request so that the server can identify the user and provide personalized content. Cookies are typically used for authentication and storing user preferences.</p>
+        </div>
         <!-- Event loop -->
+        <div class="my-6 mx-5">
+            <h3 class="text-4xl">what is Event Loop ? Explain deeply?</h3>
+            <p>JavaScript has a runtime model based on an event loop, which is responsible for executing the code, collecting and processing events, and executing queued sub-tasks. This model is quite different from models in other languages like C and Java.</p>
+            <div  class="my-5 ms-20">
+                <img src="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Event_loop/the_javascript_runtime_environment_example.svg" alt="">
+            </div>
+            <h4 class="ps-4 mt-3 text-2xl text-orange-600"><i class="fa-solid fa-hashtag"></i> Heap :- </h4>
+            <p>Objects are allocated in a heap which is just a name to denote a large (mostly unstructured) region of memory.</p>
+            <h4 class="ps-4 mt-3 text-2xl text-orange-600"><i class="fa-solid fa-hashtag"></i> Queue :- </h4>
+            <p>A JavaScript runtime uses a message queue, which is a list of messages to be processed. Each message has an associated function that gets called to handle the message.
+
+                At some point during the event loop, the runtime starts handling the messages on the queue, starting with the oldest one. To do so, the message is removed from the queue and its corresponding function is called with the message as an input parameter. As always, calling a function creates a new stack frame for that function's use.
+                
+                The processing of functions continues until the stack is once again empty. Then, the event loop will process the next message in the queue (if there is one).</p>
+
+        </div>
         <!-- quizTimer -->
         <!-- chooseQuiz -->
     </main>
